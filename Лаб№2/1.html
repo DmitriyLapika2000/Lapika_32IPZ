@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM 1</title>
+    <script type="application/javascript">
+    function setBodyAttr(cool, value){
+      eval('document.body.'+cool+'="'+value+'"');
+     
+    }
+    </script>
+  </head>
+  <body>
+    <div style="margin: 40px;">
+      <p><b>1 </b></p>
+        <b>2</b>
+        <p><b>link</b></p>
+
+    <select onChange="setBodyAttr('text',
+        this.options[this.selectedIndex].value);">
+          <option value="pink">pink
+          <option value="orange">orange
+          <option value="black">black
+        </select>
+        </select>  
+   
+    </div>
+  </body>
+</html>

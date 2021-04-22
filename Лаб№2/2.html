@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   
+  </head>
+    <body>
+      <a href="#">First</a>
+      <a href="#">Second</a>
+      <a href="#">Third</a>
+	  <a href="#">Fourth</a>
+ <p></p>
+     
+
+ <script>
+	var arrUrl = document.getElementsByTagName('a');
+	document.write("Кількість ссилок: "+ arrUrl.length + " <p></p>")
+	for(var i=0;i<arrUrl.length;i++){}
+	document.write("Текст 1-го посилання: "+arrUrl[0].innerHTML + "<p></p>")
+	document.write("Текст останнього посилання: "+arrUrl[arrUrl.length-1].innerHTML)
+	</script>
+    </body>
+</html>
