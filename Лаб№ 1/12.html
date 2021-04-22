@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript">
+      var car = [];
+      car[0] = { name: "Dmitriy",
+    model: "Mercedes",
+    vol: 3}
+      car[1] = { name: "Anastasiya",
+    model: "Wolksfagen",
+    vol: 2}
+      car[2] = { name: "Vladislav",
+    model: "BMW",
+    vol: 3}
+      car[3] = { name: "Andriy",
+    model: "Ford",
+    vol: 4}
+      let min = car[0].vol;
+      for (var i = 0; i < car.length; i++) {
+          if(car.vol < min) {
+              min = car.vol;
+          }
+      }
+      document.write("Мінімальний об'єм двигуна " + min);
+    </script>
+  </head>
+ </html>
